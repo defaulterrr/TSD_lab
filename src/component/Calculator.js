@@ -1,6 +1,6 @@
 import React from 'react'
-import ValueBox from './ValueBox'
-import ActionButton from './ActionButton'
+import ValueBox from './ValueBox/ValueBox'
+import ActionButton from './ActionButton/ActionButton'
 
 class Calculator extends React.Component {
     constructor(props) {
@@ -11,37 +11,41 @@ class Calculator extends React.Component {
             result:         0,
         }
         this.onPress = this.onPress.bind(this)
-        //const state_valueOne = {firstValue: this.state.firstValue, id: "first"}
+        
     }
 
-    onPress = () => {
-        // this.state.firstValue = 
+    onPress = (label) => {
         const first = Number(document.getElementById("first").value)
-        // alert(first)
         const second = Number(document.getElementById("second").value)
 
-        this.setState( {
-            firstValue: first,
-            secondValue: second,
-            result:     first+second
-        })
+        if (label === "+") {
+            this.setState( {
+                result:     first+second
+            })
+        } else if (label === "-") {
+            this.setState( {
+                result:     first-second
+            })
+        } else if (label === "/") {
+            this.setState( {
+                result:     first/second
+            })
+        } else if (label === "*") {
+            this.setState( {
+                result:     first*second
+            })
+        }
     }  
     
-    
-
-    // onChange = () => {
-    //     this.setState({value: event.target.value})
-    // }
-
-
-
     render() {
         return (
             <div className="Calculator">
                 <ValueBox label=" First Value: " id="first" value={this.state.firstValue}></ValueBox>
                 <ValueBox label="Second Value: " id="second" value={this.state.secondValue}></ValueBox>
-
                 <ActionButton label="+" action={this.onPress}></ActionButton>
+                <ActionButton label="-" action={this.onPress}></ActionButton>
+                <ActionButton label="/" action={this.onPress}></ActionButton>
+                <ActionButton label="*" action={this.onPress}></ActionButton>
         <h1>Answer: {this.state.result}</h1>
             </div>
         )

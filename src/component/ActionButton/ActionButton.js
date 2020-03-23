@@ -1,4 +1,5 @@
 import React from 'react'
+import './ActionButton.css'
 
 class ActionButton extends React.Component {
     constructor(props) {
@@ -11,15 +12,15 @@ class ActionButton extends React.Component {
     }
 
     onClick = () => {
-        this.state.action()
+        this.state.action(this.state.label)
     }
 
     render() {
 
         return(
-            <div className='ActionButton'>
+            <div className='ActionButton' class="ActionButton">
 
-        <button onClick={this.onClick}>{this.state.label}</button>
+        <button onClick={this.onClick} class="button">{this.state.label}</button>
             </div>
         )
 

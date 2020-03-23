@@ -1,4 +1,5 @@
 import React from 'react'
+import './ValueBox.css'
 
 class ValueBox extends React.Component {
 
@@ -25,7 +26,7 @@ class ValueBox extends React.Component {
 
     render() {
         return (
-            <div className={this.state.id}>
+            <div className={this.state.id} class="ValueBox">
                 <label className="inputLabel">
                     {this.state.label}
                 </label>
