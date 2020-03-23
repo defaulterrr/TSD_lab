@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[RENDER] Calculator – Snapshot test Matches the snapshot 1`] = `
+<div
+  className="Calculator"
+>
+  <div
+    class="ValueBox"
+    className="num_1"
+  >
+    <label
+      className="inputLabel"
+    >
+       First Value: 
+    </label>
+    <input
+      className="inputValue"
+      id="num_1"
+      onChange={[Function]}
+      type="text"
+      value={0}
+    />
+  </div>
+  <div
+    class="ValueBox"
+    className="num_2"
+  >
+    <label
+      className="inputLabel"
+    >
+      Second Value: 
+    </label>
+    <input
+      className="inputValue"
+      id="num_2"
+      onChange={[Function]}
+      type="text"
+      value={0}
+    />
+  </div>
+  <div
+    class="ActionButton"
+    className="ActionButton"
+  >
+    <button
+      class="button"
+      onClick={[Function]}
+    >
+      +
+    </button>
+  </div>
+  <div
+    class="ActionButton"
+    className="ActionButton"
+  >
+    <button
+      class="button"
+      onClick={[Function]}
+    >
+      -
+    </button>
+  </div>
+  <div
+    class="ActionButton"
+    className="ActionButton"
+  >
+    <button
+      class="button"
+      onClick={[Function]}
+    >
+      /
+    </button>
+  </div>
+  <div
+    class="ActionButton"
+    className="ActionButton"
+  >
+    <button
+      class="button"
+      onClick={[Function]}
+    >
+      *
+    </button>
+  </div>
+  <h1>
+    Answer: 
+    0
+  </h1>
+</div>
+`;

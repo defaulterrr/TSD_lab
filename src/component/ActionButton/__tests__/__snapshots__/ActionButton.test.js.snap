@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[RENDER] ActionButton – Snapshot test Matches the snapshot 1`] = `
+<div
+  class="ActionButton"
+  className="ActionButton"
+>
+  <button
+    class="button"
+    onClick={[Function]}
+  >
+    Action Button
+  </button>
+</div>
+`;
