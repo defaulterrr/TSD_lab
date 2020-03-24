@@ -10,20 +10,3 @@ describe("[RENDER] Calculator – Snapshot test", ()=> {
         expect(calculator.toJSON()).toMatchSnapshot()
     })
 })
-
-// Now to some end-to-end testing
-
-describe("[FUNCTIONAL] Calculator – a+b",()=>{
-    test("It shows the expected result",()=>{
-        const component = create(<Calculator/>)
-        const instance = component.root
-        const buttons = instance.findAllByType("button")
-        const plusButton = buttons[0]
-        component.props.setState({
-               firstValue:  2,
-               secondValue: 3    
-            }
-        )
-        plusButton.props.onClick()
-    })
-})
