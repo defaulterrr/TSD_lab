@@ -42,3 +42,10 @@ Builds the app for production to the `dist` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.<br />
+
+
+### `docker-compose up`
+
+Build intermediate container from Node to build the application, then build another container from Nginx to host it.
+
+Automatically hosts to localhost:8080
